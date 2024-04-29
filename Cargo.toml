@@ -1,0 +1,12 @@
+[package]
+name = "php-zip-rust"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+zip = "1.1.1"
+anyhow = "1.0.82"
+ext-php-rs = { version = "0.12", features = ["anyhow"]}
